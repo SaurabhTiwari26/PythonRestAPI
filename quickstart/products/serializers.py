@@ -7,8 +7,8 @@ class ProductSerializer(ModelSerializer):
     # sale_price = SerializerMethodField(read_only=True)
     class Meta:
         model = Products
-        fields = ['id','title','content','price']
-        # fields = ['id', 'title', 'content', 'price', 'sale_price']
+        # fields = ['id','title','content','price']
+        fields = ['id', 'title', 'content', 'price', 'sale_price']
         # fields = '__all__'
 
     def get_sale_price(self,product):
